@@ -1,8 +1,6 @@
 {
-  "name": "Cart",
-  "app_id": "",
-  "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
+  "name": "foodkart",
+  "app_id": "ca06b668",
+  "integrations": {},
+  "type": "ionic1"
 }
