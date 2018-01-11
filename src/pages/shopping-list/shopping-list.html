@@ -1,0 +1,37 @@
+
+<ion-header>
+ 
+  <ion-navbar color="primary">
+    <ion-title>Shopping List</ion-title>
+    <ion-buttons end> 
+      <button ion-button icon-only 
+      (click)="navigateToAddShoppingPage()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <!-- Repeat the ion-item for as many items that we have inside of our shopping list. -->
+    <ion-item *ngFor="let item of shoppingListRef$ | async" (click)="selectShoppingItem(item)">
+      <ion-card>
+        <img src="assets/img/{{item.itemName}}.jpg"/>
+          <ion-card-header>
+            ชื่อเมนูอาหาร : {{item.itemName}}
+          </ion-card-header>
+        
+          <ion-card-content>
+            ราคา : {{item.itemNumber}}
+          </ion-card-content>
+        
+        </ion-card>
+      
+    </ion-item>
+  </ion-list>
+
+</ion-content>

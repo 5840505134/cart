@@ -1,12 +1,6 @@
 {
-  "name": "foodkart",
-  "app_id": "ca06b668",
-  "integrations": {},
-  "type": "ionic1",
-  "watchPatterns": [
-    "scss/**/*",
-    "www/**/*",
-    "!www/lib/**/*",
-    "!www/**/*.map"
-  ]
+  "name": "FirebaseCRUD",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {}
 }
